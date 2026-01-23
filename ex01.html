@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+const 메뉴 = ["피자","김밥","만두","양념치킨","족발","피자","김치만두","쫄면","소시지","라면","팥빙수","김치전"];
+
+// 사용자 입력 받기 (브라우저 환경에서)
+let 선택 = prompt("점심으로 무엇을 먹을지 숫자로 입력하시오 (0~11)");
+
+// 입력값을 숫자로 변환
+선택 = Number(선택);
+
+// 입력 확인 후 메뉴 출력
+if (선택 >= 0 && 선택 < 메뉴.length) {
+    alert(`오늘 점심은 ${메뉴[선택]}이다`);
+} else {
+    alert("잘못된 숫자입니다 0~11 사이 숫자를 입력해주세요.");
+}
+  </script>
+</body>
+</html>
